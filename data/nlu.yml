@@ -1,0 +1,481 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - hi there!
+      - hello!
+      - greetings!
+      - hey, how’s it going?
+      - what's up?
+      - howdy!
+      - hi, good to see you!
+      - hey, what’s new?
+      - hello, chatbot!
+      - hi again!
+      - hey, nice to meet you!
+      - good to see you!
+      - hello, friend!
+      - hey, how are you doing today?
+      - hi, hope you're doing well.
+      - what's going on?
+      - hey, how are things?
+      - how’s everything?
+      - hi, how’s life treating you?
+      - hello there, how’s it going?
+      - hey, what's happening?
+      - hi there, how are you?
+      - hello, how do you do?
+      - good day!
+      - hi, what’s up?
+      - hey, long time no see!
+      - hi, what’s going on?
+      - hello there, buddy!
+      - yo!
+      - hi, hope all is well.
+      - hey, how’s your day going?
+      - hello again!
+      - hi there, chatbot!
+      - hi, good morning!
+      - hey, what’s good?
+      - hello there, how are you today?
+      - how’s it hanging?
+      - hi there, how’s everything?
+      - hey, what’s the latest?
+      - hi, nice to see you again.
+      - hey, great to meet you!
+      - hello, how’s your evening?
+      - hi, how are things going?
+      - what’s the vibe?
+      - hiya!
+      - hey there, how have you been?
+      - hello, lovely day isn’t it?
+      - good to see you, chatbot!
+      - what’s cooking?
+      - hello, how’s the weather over there?
+      - hey, what’s new with you?
+      - hi, what’s going down?
+      - hey there, how are you feeling today?
+      - good afternoon!
+      - hello, it’s me again!
+      - hi, how’s work going?
+      - hey, just checking in.
+      - hello, how’s your family doing?
+      - hey, how was your weekend?
+      - hi, hope you’re having a great day!
+      - hello, what’s on your mind today?
+      - hi, happy to chat with you!
+      - hey there, what’s going on?
+      - hello, let’s catch up!
+      - what’s happening, friend?
+      - hello, everything okay on your end?
+      - hi, hope things are good.
+      - hey, let’s talk!
+      - hi there, what’s the word?
+      - hey, long time no chat!
+      - hello, it’s great to be here!
+      - hi, how’s your morning so far?
+      - hey, glad to connect!
+      - hi there, how are things with you?
+      - hello, I’ve got a question for you.
+      - hey, hope you’re feeling well today.
+      - hi, let’s have a chat.
+      - hello, what’s the latest news?
+      - hi, any updates?
+      - hey, how’s your night going?
+      - hi, just wanted to say hello!
+      - hey, been thinking about chatting with you.
+      - hello, how’s it going over there?
+      - hi there, ready to talk!
+      - hey, what’s your vibe today?
+      - good evening, chatbot!
+      - hi, just checking in on you.
+      - hello, I’m here!
+      - hey, how’s the energy today?
+      - hi, hope you’re in good spirits.
+      - hello, how do you feel about today?
+      - hey, what’s your mood like?
+      - hi, how are you doing emotionally?
+      - hello, what’s your current status?
+      - hey there, what’s the good word?
+      - hi, what’s shaking?
+  - intent: goodbye
+    examples: |
+      - good bye
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - goodbye for now
+      - see you next time
+      - later!
+      - bye -bye
+      - see you soon
+      - take care
+      - catch you later
+      - have a great day
+      - I’m off, bye
+      - talk to you later
+      - bye for now
+      - peace out
+      - farewell
+      - I gotta go
+      - take it easy
+      - have a good one
+      - until next time
+      - catch you on the flip side
+      - bye, see you around
+      - adios
+      - ciao
+      - I’ll talk to you later
+      - see you later, alligator
+      - bye, take care
+      - I’m signing off
+      - until we meet again
+      - later, friend
+      - goodbye and take care
+      - it’s time to say goodbye
+      - see you in a bit
+      - catch you soon
+      - talk soon
+      - have a nice day
+      - bye now
+      - see you in the future
+      - I’ll catch you later
+      - so long
+      - cheers, goodbye
+      - bye, have a wonderful day
+      - see you around, buddy
+      - take care, see you later
+      - bye, stay safe
+      - goodbye for today
+      - see you in the next chat
+      - have a good evening
+      - take care, till next time
+      - bye, until later
+      - I’ll be off now
+      - take care, my friend
+      - have a good night
+      - take care, talk later
+      - bye -bye, for now
+      - so long, my friend
+      - I’ll see you soon
+      - goodbye, see you tomorrow
+      - cheers, until next time
+      - stay safe, bye
+      - later, take it easy
+      - have a wonderful evening
+      - bye, catch you later
+      - talk to you another time
+      - goodbye for the moment
+      - I’ll leave now, bye
+      - later, talk soon
+      - I’ll see you next time
+      - bye for the day
+      - take care, until next time
+      - it’s goodbye for now
+      - farewell, till we meet again
+  - intent: affirm
+    examples: |
+      - yes
+      - definitely
+      - absolutely
+      - for sure
+      - of course
+      - sure
+      - I agree
+      - that’s right
+      - indeed
+      - that sounds good
+      - yes, please
+      - you’re right
+      - exactly
+      - without a doubt
+      - no doubt
+      - yep
+      - okay
+      - certainly
+      - totally
+      - that's correct
+      - yep, that's true
+      - sure thing
+      - definitely yes
+      - I think so
+      - of course, go ahead
+      - I’d love that
+      - yeah, that works
+      - you bet
+      - I'm all for it
+      - yes, I understand
+      - sure, let's do it
+      - 100%
+      - no problem
+      - sounds great
+      - agreed
+      - that’s exactly right
+      - I’m on board
+      - I’m with you
+      - no doubt about it
+      - fine by me
+      - that works for me
+      - sure, I’m in
+      - right on
+      - absolutely yes
+      - count me in
+      - that’s a yes from me
+      - for sure, go ahead
+      - you got it
+      - that’s perfect
+      - that’s fine
+      - okay, go for it
+      - absolutely right
+      - sure, I’m happy with that
+      - yes, let’s proceed
+      - sure, sounds good to me
+      - I’m game
+      - I’m all in
+      - absolutely, let’s go
+      - yes, I’m interested
+      - for sure, I agree
+      - correct, let’s do it
+      - absolutely, that works
+      - yes, let's continue
+      - that’s exactly what I wanted
+      - I’m in favor
+      - yes, that’s great
+      - you nailed it
+      - you’re absolutely right
+      - sure, I’d appreciate that
+  - intent: deny
+    examples: |
+      - no
+      - no thanks
+      - I don’t think so
+      - definitely not
+      - not at all
+      - I don’t agree
+      - not really
+      - never
+      - no way
+      - that’s not right
+      - absolutely not
+      - I’m not interested
+      - not quite
+      - I’m not sure about that
+      - no, that’s not what I meant
+      - that’s not true
+      - I disagree
+      - that’s not correct
+      - I don’t want that
+      - I’m not up for it
+      - don’t think so
+      - I’m not into that
+      - nope
+      - that’s not what I had in mind
+      - not exactly
+      - I’ll pass
+      - that doesn’t sound good
+      - I’m not feeling it
+      - not right now
+      - not for me
+      - not at this moment
+      - I’d rather not
+      - I’m going to have to say no
+      - I don’t think that’s a good idea
+      - no, I’d prefer something else
+      - not today
+      - no, thank you very much
+      - I’m going to pass on that
+      - I’m not into it
+      - I’m not going to do that
+      - no, I’ll skip it
+      - no, that’s not for me
+      - I’m not convinced
+      - no, I’ll pass on that
+      - I’m not really into it
+      - no, I’m good
+      - no, that doesn’t appeal to me
+      - I’m not down for that
+      - I’d rather not, thanks
+      - I’m not in the mood
+      - no, that’s not something I want
+      - that’s not what I want
+      - I’d rather not do that
+      - I’m not okay with that
+      - no, not interested
+      - I’m not feeling it today
+      - I’m going to decline
+      - no, I don’t think that’s a good idea
+      - I’m saying no to that
+      - no, not right now
+      - no, I’m good for now
+      - no thanks, not today
+      - I don’t agree with that
+      - I won’t do that
+      - no, that’s not what I need
+  - intent: mood_happy
+    examples: |
+      - Good
+      - Amazing
+      - Excellent
+      - Wonderful
+      - Cheerful
+      - Great
+      - I’m feeling great
+      - I’m on cloud nine
+      - I’m so happy
+      - I’m in a good mood
+      - today’s been awesome
+      - I’m doing fantastic
+      - life is good
+      - I’m feeling amazing
+      - everything’s going well
+      - I’m in a great mood
+      - I’m so excited
+      - I feel wonderful
+      - I’m happy as can be
+      - I’m really enjoying today
+      - things are going great
+      - I’m so pumped
+      - I’m feeling fantastic
+      - I feel awesome
+      - I’m really excited
+      - I feel like a million bucks
+      - I’m in a super good mood
+      - I’m ecstatic
+      - I’m feeling like a champion
+      - today’s been fantastic
+      - I feel incredible
+      - I feel like I’m on top of the world
+      - I’m thrilled
+      - I’m over the moon
+      - I’m so stoked
+      - I’m in a blissful mood
+      - I feel so positive
+      - I’m feeling wonderful today
+      - everything feels amazing
+      - I’m feeling really good
+      - I’m so cheerful
+      - I’m in high spirits
+      - today is a great day
+      - I’m so content
+      - I’m glowing with happiness
+      - I’m feeling awesome today
+      - I’m in an excellent mood
+      - I’m feeling upbeat
+      - I’m full of energy
+      - everything’s looking up
+      - I’m feeling fantastic right now
+      - I feel super happy
+      - today couldn’t be better
+      - I’m filled with joy
+      - I’m on top of the world
+      - I feel great today
+      - I’m so delighted
+      - life is wonderful
+      - I’m absolutely happy
+      - I’m really enjoying myself
+      - I’m in such a good place
+      - I’m having an amazing day
+      - I’m happy today
+      - I feel really positive
+      - I’m filled with happiness
+      - I’m excited for today
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  - intent: lower_stress
+    examples: |
+      - how can I overcome stress?
+      - how to overcome stress?
+      - give me advice on how to overcome stress
+      - is there any way to overcome stress?
+      - what are the ways to get out of stress?
+      - what should I do to overcome stress?
+      - how can I lower my stress level?
+      - what do I do when I am stressed?
+      - what are the good ways to lower stress?
+      - what are good ways to relax?
+      - What are some quick ways to relieve stress?
+      - How can I manage my anxiety and stress?
+      - I'm feeling overwhelmed. What should I do?
+      - I'm stressed out. Can you help me relax?
+      - I need to de-stress. Any suggestions?
+  - intent: exercise
+    examples: |
+      - I do workout [regularly](amount).
+      - I do [quit a lot](amount).
+      - [not much](amount).
+      - I workout [4 hour per week](amount)
+      - Yes, I go to the gym [every day](amount).
+      - Nah, [never](amount) heard of it.
+  - intent: restaurant_list
+    examples: |
+      - show me the closest restaurants?
+      - show me the list of restaurants near me
+      - is there any restaurant around me?
+      - where can I find a restaurant
+      - i am hungry
+      - I am starving
+      - I want to eat, is there a place where I can find food?
+      - it is time to eat
+      - I want to have a lunch
+      - I need a restaurant
+      - give me the list of restaurants near me
+      - list of restaurants
+      - restaurants
+      - i want to eat
+  - intent: city
+    examples: |
+      - I am in [Atlas tibb mərkəzi]{"entity": "city"}
+      - Currently I am in [Azerbaijan State Economic University]{"entity": "city"}
+      - My location is at [Azərbaycan Dövlət Pedaqoji Universiteti]{"entity": "city"}
+      - I live in [5 nömrəli Şəhər Klinik Xəstəxanası]{"entity": "city"}
+      - I am in [Yaşam Tibb Mərkəzi]{"entity": "city"}, Baku.
+      - I'm living in [Orta məktəb №193]{"entity": "city"}
+      - [Nariman Narimanov]{"entity": "city"}
+      - My location is [Gənclik Şadlıq Sarayı]{"entity": "city"}
+      - [Buta Clinic]{"entity": "city"}
+      - I am staying at [Heydar Aliyev Centre]{"entity": "city"}
+      - it is [Sevgi parkı]{"entity": "city"}
+      - This is my location [Azəriqaz]{"entity": "city"}
+      - My location is [Nobel Hotel Baku]{"entity": "city"}
+      - [Cuppa Coffee White City]("entity": "city"} is my location
+      - the location is [Baku Nobel Heritage Fund]{"entity": "city"}
+      - [ADA University]{"entity": "city"}
+      - I am in [ADA University]{"entity": "city"}
+      - [28th May]{"entity": "city"}
+
+  - intent: full_stomach
+    examples: |
+      - I am full
+      - I don't want to eat
+      - My stomach is full
+      - I don't want food
+      - I don't feel like eating
+      - I am not hungry
+      - No hunger
+      - Not hungry
+      - Don't wanna eat
+      - wanna eat nothing

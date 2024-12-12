@@ -1,0 +1,79 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: affirm
+      - action: action_return_feed
+      - action: utter_goodbye
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: sad path 3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_cheer_up
+      - intent: lower_stress
+      - action: utter_lower_stress
+      - action: utter_exercise
+      - intent: exercise
+      - action: utter_good_feedback
+
+  - story: qa
+    steps:
+      - intent: lower_stress
+      - action: utter_lower_stress
+      - action: utter_exercise
+      - intent: exercise
+      - action: utter_good_feedback
+
+  - story: restaurant
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_list
+      - action: utter_ask_city
+      - intent: city
+      - action: action_return_feed
+      - action: utter_bonappetit
+
+  - story: restaurant path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+      - intent: restaurant_list
+      - action: utter_ask_city
+      - intent: city
+      - action: action_return_feed
+      - action: utter_bonappetit
+
+  - story: interactive_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_list
+      - action: utter_ask_city
+      - intent: city
+      - action: action_return_feed
+      - intent: goodbye
+      - action: utter_goodbye
+  - story: not hungry path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: full_stomach
+      - action: utter_user_full

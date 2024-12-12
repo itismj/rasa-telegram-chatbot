@@ -1,0 +1,86 @@
+version: "3.1"
+intents:
+  - affirm
+  - bot_challenge
+  - deny
+  - exercise
+  - goodbye
+  - greet
+  - city
+  - lower_stress
+  - mood_great
+  - mood_unhappy
+  - restaurant_list
+  - full_stomach
+entities:
+  - city
+  - amount
+slots:
+  amount:
+    type: list
+    mappings:
+      - type: from_entity
+        entity: amount
+  city:
+    type: list
+    mappings:
+      - type: from_entity
+        entity: city
+responses:
+  utter_intro:
+    - text: Hello, I am a bot that can help you find the closes restaurants to you.
+  utter_greet:
+    - text: Hey! How are you?
+    - text: Hello there! How are you today?
+    - text: Hi! How's it going?
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+    - text: Did that help you?
+  utter_happy:
+    - text: Great, I'm glad to hear! What can I do for you?
+  utter_bonappetit:
+    - text: Bon appetit!
+  utter_goodbye:
+    - text: Bye
+  utter_iamabot:
+    - text: I am a bot, powered by Rasa.
+  utter_lower_stress:
+    - text: Ah, looks like you are having a hard time huh? I would recommend you to be more energetic and do me exercise. Studies have shown that regular exercise keep your stress level all time low.
+  utter_confirm_exercise:
+    - text: How often do you exercise?
+  utter_exercise:
+    - text: Do you do exercises regularly?
+  utter_goal:
+    - text: Do you have any future goals?
+  utter_diet:
+    - text: What's your diet?
+  utter_sleep:
+    - text: How long do you sleep a day?
+  utter_stress:
+    - text: Do feel stressed a lot?
+  utter_continue:
+    - text: I don't understand what you saying. Do you want to rephrase it?
+  utter_good_feedback:
+    - text: Nice, if you are really exercising {amount}
+  utter_bad_feedback:
+    - text: That's the reason to all of your problems. You are a Faliure!
+  utter_ask_city:
+    - text: Okay, give me your location.
+    - text: Let me send you nearby restaurants then. Write down your location
+  utter_affirm_location:
+    - text: So you live in {city}. I heard it's a beautiful city.
+  utter_user_full:
+    - text: You are ready to be productive then!
+    - text: Go and sleep then! :)
+    - text: That's great! Grab some coffee then.
+actions:
+  - action_return_feed
+  - utter_greet
+  - utter_ask_city
+  - utter_affirm_location
+  - utter_user_full
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
